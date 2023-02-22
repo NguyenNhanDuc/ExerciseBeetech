@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_screen"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/pad_24"
+            android:src="@drawable/ic_back"
+            app:layout_constraintBottom_toBottomOf="@id/tvThietLap"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tvThietLap" />
+
+        <TextView
+            android:id="@+id/tvThietLap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/pad_52"
+            android:gravity="center"
+            android:text="@string/thiet_lap_tai_khoan"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_20"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edtAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/pad_30"
+            android:layout_marginTop="@dimen/pad_21"
+            android:background="@drawable/bg_edit"
+            android:drawableStart="@drawable/ic_account"
+            android:drawablePadding="@dimen/pad_16"
+            android:paddingVertical="@dimen/pad_13"
+            android:paddingStart="@dimen/pad_17"
+            android:text="HuongNT"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_16"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/tvThietLap" />
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/pad_30"
+            android:layout_marginTop="@dimen/pad_15"
+            android:background="@drawable/bg_edit"
+            android:drawableStart="@drawable/ic_password"
+            android:drawablePadding="@dimen/pad_16"
+            android:inputType="textPassword"
+            android:paddingVertical="@dimen/pad_13"
+            android:paddingStart="@dimen/pad_17"
+            android:text="jsafklajfla"
+            android:textSize="@dimen/size_16"
+            app:layout_constraintTop_toBottomOf="@id/edtAccount" />
+
+        <TextView
+            android:id="@+id/tvDoiMatKhau"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/pad_30"
+            android:layout_marginTop="@dimen/pad_21"
+            android:background="@drawable/bg_click"
+            android:gravity="center"
+            android:paddingVertical="@dimen/pad_13"
+            android:text="@string/doi_mat_khau"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_13"
+            app:layout_constraintTop_toBottomOf="@id/edtPassword" />
+
+        <TextView
+            android:id="@+id/tvThongTin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/pad_24"
+            android:layout_marginTop="@dimen/pad_32"
+            android:text="@string/thong_tin_ca_nhan"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_20"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/tvDoiMatKhau" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/pad_15"
+            android:src="@drawable/ic_profile"
+            app:civ_border_color="@color/border_blue"
+            app:civ_border_width="@dimen/pad_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvThongTin" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_camera"
+            app:civ_border_color="@color/border_blue"
+            app:civ_border_width="@dimen/pad_2"
+            app:civ_circle_background_color="@color/white"
+            app:layout_constraintBottom_toBottomOf="@id/imgProfile"
+            app:layout_constraintEnd_toEndOf="@id/imgProfile" />
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/pad_30"
+            android:layout_marginTop="@dimen/pad_15"
+            android:background="@drawable/bg_edit"
+            android:drawableStart="@drawable/ic_name"
+            android:drawablePadding="@dimen/pad_16"
+            android:paddingVertical="@dimen/pad_13"
+            android:paddingStart="@dimen/pad_17"
+            android:text="Nguyễn Thu Hương"
+            android:textSize="@dimen/size_16"
+            app:layout_constraintTop_toBottomOf="@id/imgProfile" />
+
+        <EditText
+            android:id="@+id/edtDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/pad_30"
+            android:layout_marginTop="@dimen/pad_15"
+            android:background="@drawable/bg_edit"
+            android:drawableStart="@drawable/ic_date"
+            android:drawablePadding="@dimen/pad_16"
+            android:paddingVertical="@dimen/pad_13"
+            android:paddingStart="@dimen/pad_17"
+            android:text="28/04/1986"
+            android:textSize="@dimen/size_16"
+            app:layout_constraintTop_toBottomOf="@id/edtName" />
+
+        <TextView
+            android:id="@+id/tvGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/pad_30"
+            android:layout_marginTop="@dimen/pad_15"
+            android:background="@drawable/bg_edit"
+            android:drawableStart="@drawable/ic_gender"
+            android:drawablePadding="@dimen/pad_16"
+            android:paddingVertical="@dimen/pad_13"
+            android:paddingStart="@dimen/pad_18"
+            android:textSize="@dimen/size_16"
+            app:layout_constraintTop_toBottomOf="@id/edtDate" />
+
+        <RadioGroup
+            android:id="@+id/rgGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/pad_30"
+            android:layout_marginTop="@dimen/pad_15"
+            android:orientation="horizontal"
+            android:paddingVertical="@dimen/pad_22"
+            app:layout_constraintBottom_toBottomOf="@id/tvGender"
+            app:layout_constraintTop_toBottomOf="@id/edtDate">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/pad_54"
+                android:layout_marginEnd="@dimen/pad_12"
+                android:buttonTint="@color/blue"
+                android:text="@string/nam"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/pad_12"
+                android:layout_marginEnd="@dimen/pad_12"
+                android:buttonTint="@color/blue"
+                android:text="@string/nu"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/pad_12"
+                android:buttonTint="@color/blue"
+                android:text="@string/khac"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/edtAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/pad_30"
+            android:layout_marginTop="@dimen/pad_15"
+            android:background="@drawable/bg_edit"
+            android:drawableStart="@drawable/ic_address"
+            android:drawablePadding="@dimen/pad_16"
+            android:paddingVertical="@dimen/pad_13"
+            android:paddingStart="@dimen/pad_17"
+            android:text="Tầng 4, Tòa nhà H10, Số 2 Ngõ 475, Thanh Xuan, Hà Nội"
+            android:textSize="@dimen/size_16"
+            app:layout_constraintTop_toBottomOf="@id/tvGender" />
+
+        <TextView
+            android:id="@+id/tvCapNhat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/pad_30"
+            android:layout_marginTop="@dimen/pad_15"
+            android:layout_marginBottom="@dimen/pad_15"
+            android:background="@drawable/bg_click"
+            android:gravity="center"
+            android:paddingVertical="@dimen/pad_13"
+            android:text="@string/cap_nhat"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_16"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edtAddress" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

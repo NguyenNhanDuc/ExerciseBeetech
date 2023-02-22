@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">BaiTapProjectCtyBeetech</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Home">Trang chủ</string>
+    <string name="checkUp">Khám bệnh</string>
+    <string name="test">Xét nghiệm</string>
+    <string name="information">Hồ sơ</string>
+    <string name="account">Tài khoản</string>
+    <string name="thiet_lap_tai_khoan">Thiết lập tài khoản</string>
+    <string name="doi_mat_khau">Đổi mật khẩu</string>
+    <string name="thong_tin_ca_nhan">Thông tin cá nhân</string>
+    <string name="nam">Nam</string>
+    <string name="nu">Nữ</string>
+    <string name="khac">Khác</string>
+    <string name="cap_nhat">CẬP NHẬT</string>
+</resources>
